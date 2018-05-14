@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ExpenseDashboardPage from '../Components/ExpenseDashboardPage';
-import Header from '../Components/Header';
+import ExpenseDashboardPage from '../Components/components-ExpenseDashboardPage';
+import Header from '../Components/components-Header';
 
-import AddExpensePage from '../Components/AddExpensePage';
-import EditExpensePage from '../Components/EditExpensePage';
-import HelpPage from '../Components/HelpPage';
-import NotFoundPage from '../Components/NotFoundPage';
+import AddExpensePage from '../Components/components-AddExpensePage';
+import EditExpensePage from '../Components/components-EditExpensePage';
+import HelpPage from '../Components/components-HelpPage';
+import NotFoundPage from '../Components/components-NotFoundPage';
 
 // create 6 new files for the 6 components
 // setup imports, component, default exports
