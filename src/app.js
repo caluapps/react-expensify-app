@@ -5,9 +5,9 @@ import { Provider } from 'react-redux';
 
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { addExpense, removeExpense, editExpense } from './actions/actions-expenses';
-import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from './actions/actions-filters';
-import getVisibleExpenses from './selectors/selectors-expenses';
+import { addExpense, removeExpense, editExpense } from './actions/action-expenses';
+import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from './actions/action-filters';
+import getVisibleExpenses from './selectors/selector-expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import uuid from 'uuid';
@@ -24,7 +24,7 @@ store.dispatch(addExpense({description: 'Gas bill'}));
 store.dispatch(setTextFilter('water'));
 
 setTimeout(() => {
-  store.dispatch(setTextFilter('rent'));
+  store.dispatch(setTextFilter('bill'));
 }, 3000);
 
 const state = store.getState();
