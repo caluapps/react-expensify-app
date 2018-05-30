@@ -14,6 +14,7 @@ import uuid from 'uuid';
 
 const store = configureStore();
 
+/* Delete
 // addExpense -> Water bill
 // addExpense -> Gas bill
 // setTextFilter -> bill (2 items) -> water (1 item)
@@ -24,18 +25,18 @@ store.dispatch(addExpense({description: 'Gas bill', createdAt: 1000}));
 store.dispatch(addExpense({description: 'Rent', amount: 109500}));
 
 
-/*
+
 store.dispatch(setTextFilter('water'));
 
 setTimeout(() => {
   store.dispatch(setTextFilter('bill'));
-}, 3000); */
+}, 3000);
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 console.log(visibleExpenses);
 
-// console.log(store.getState());
+// console.log(store.getState()); */
 
 const jsx = (
   <Provider store={store}>
